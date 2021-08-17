@@ -18,18 +18,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 pd.options.mode.chained_assignment = None
 from sklearn.preprocessing import StandardScaler
-
-
-
 import sys
 import warnings
 if not sys.warnoptions:
        warnings.simplefilter("ignore")
 
-dfc = pd.read_csv('/datasets/final_provider/contract.csv')
-dfi = pd.read_csv('/datasets/final_provider/internet.csv')
-dfp = pd.read_csv('/datasets/final_provider/personal.csv')
-dfph = pd.read_csv('/datasets/final_provider/phone.csv')
+dfc = pd.read_csv('/datasets/c.csv')
+dfi = pd.read_csv('/datasets/i.csv')
+dfp = pd.read_csv('/datasets/p.csv')
+dfph = pd.read_csv('/datasets/ph.csv')
 
 """Выгружаем данные."""
 
